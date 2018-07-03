@@ -67,7 +67,7 @@ To use the Vue framework you need to have [node installed](https://nodejs.org/en
 After installing all these packages, you can `cd` into the root directory of the Vue app ([vue](vue)). Then execute
 
 ```bash
-yarn install
+npm install
 ```
 
 This should run for a while (approximately a minute). Afterwards you can start the development server by executing
