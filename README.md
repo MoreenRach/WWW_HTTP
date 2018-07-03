@@ -62,9 +62,7 @@ This should make the coding easier for you. If you have any questions you can't 
 To get started with the Vue framework we recommend the Vue [documentation](https://vuejs.org/v2/guide/) and this [short (5 minutes long) video](https://player.vimeo.com/video/247494684).
 
 ### Development setup
-To use the Vue framework you need to have [node installed](https://nodejs.org/en/download/). We recommend the LTS version.
-
-As our package manager we are using [yarn](https://yarnpkg.com/). This software you can [install here](https://yarnpkg.com/lang/en/docs/install/).
+To use the Vue framework you need to have [node installed](https://nodejs.org/en/download/). We recommend the LTS version. Please choose to install `npm` with it.
 
 After installing all these packages, you can `cd` into the root directory of the Vue app ([vue](vue)). Then execute
 
@@ -75,7 +73,7 @@ yarn install
 This should run for a while (approximately a minute). Afterwards you can start the development server by executing
 
 ```bash
-yarn run dev
+npm run dev
 ```
 
 The first compilation will take a little bit longer.
