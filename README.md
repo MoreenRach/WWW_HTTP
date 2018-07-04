@@ -32,6 +32,8 @@ In case it is not working properly, we provide you our reference API at this URL
 
 Please note: Our API has some rate limits applied (1 Request per Second) to provide the same quality of service to every student, so please be patient when testing with it.
 
+In case you do not know anything about JavaScript, we recommend [this short reference](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics) for you. For starting with HTML5 we recommend [this guide](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started).
+
 If you are not familiar with, you should check out the dev tools of your browser [Firefox](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools), [Chrome](https://developers.google.com/web/tools/chrome-devtools/).
 
 ## Plain task
