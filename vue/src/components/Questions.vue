@@ -56,7 +56,7 @@ export default {
         },
         {
           'title': 'Vue Watcher',
-          'question': 'When is a watcher like "currentQuestion" in src/components/API.vue called?',
+          'question': 'When is a watcher like "currentPage" in src/components/API.vue called?',
           'points': 1,
           'answer': 'Hmmm, I did not come up with a solution yet.'
         }
