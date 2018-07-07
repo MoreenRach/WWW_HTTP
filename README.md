@@ -66,6 +66,8 @@ To get started with the Vue framework we recommend the Vue [documentation](https
 ### Development setup
 To use the Vue framework you need to have [node installed](https://nodejs.org/en/download/). We recommend the LTS version. Please choose to install `npm` with it.
 
+Please note: When using Linux please make sure you are **not** working on a NTFS or FAT file system!
+
 After installing all these packages, you can `cd` into the root directory of the Vue app ([vue](vue)). Then execute
 
 ```bash
