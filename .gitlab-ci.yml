@@ -19,17 +19,11 @@ install-dependencies:
         - vue/node_modules
       expire_in: 2 days
 
-vue-e2e:
-  stage: test
-  script:
-    - cd vue
-    - yarn run e2e
-
 vue-unit:
   stage: test
   script:
     - cd vue
-    - yarn run unit
+    - yarn run lint
   dependencies:
     - install-dependencies
 

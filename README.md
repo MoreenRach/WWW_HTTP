@@ -17,8 +17,8 @@ We recommend you to solve the tasks in the following order:
     * Upload the ZIP file to our Moodle
     * You allowed to work in teams of 2, please write matriculation number(s) where it is asked for:
         * [plain/index.html](plain/index.html)
-        * [vue/src/components/API.vue](vue/src/components/API.vue)
-        * [vue/src/components/Questions.vue](vue/src/components/Questions.vue)
+        * [vue/src/views/API.vue](vue/src/views/API.vue)
+        * [vue/src/views/Questions.vue](vue/src/views/Questions.vue)
     * Write your answers in German or English, in code please write all English
     * Do not change any file names if not really needed (and then please document).
     * Set all backend URLs to `http://localhost:5000`
@@ -54,8 +54,8 @@ The more interesting task is the Vue task ;)
 
 You will have to slightly modify some source files. These files are:
 
-* [vue/src/components/API.vue](vue/src/components/API.vue)
-* [vue/src/components/Questions.vue](vue/src/components/Questions.vue)
+* [vue/src/views/API.vue](vue/src/views/API.vue)
+* [vue/src/views/Questions.vue](vue/src/views/Questions.vue)
 * [vue/src/constants.js](vue/src/constants.js) (For setting the backend URL)
 
 Nevertheless you should make sure you understand (at least know what it is generally doing) the rest of the source code in [vue/src](vue/src) before starting to code.
@@ -71,14 +71,16 @@ Please note: When using Linux please make sure you are **not** working on a NTFS
 After installing all these packages, you can `cd` into the root directory of the Vue app ([vue](vue)). Then execute
 
 ```bash
-npm install
+yarn install
 ```
 
 This should run for a while (approximately a minute). Afterwards you can start the development server by executing
 
 ```bash
-npm run dev
+yarn run serve
 ```
+
+You can also substitute `yarn` with `npm`, if it is easier for you to install/use it.
 
 The first compilation will take a little bit longer.
 After finishing compiling you will see the development's server address in your terminal.
@@ -100,5 +102,5 @@ For the API page we expect something like this as result:
 ![alt text](docs/expected-result-vue.png)
 
 ## Ok, I really do not know what I am supposed to do
-If you have any questions left or found a bug in our stub code, please mail us at `www-coding@lists.myhpi.de`.
+If you have any questions left or found a bug in our stub code, please mail us at `www@lists.myhpi.de`.
 We will be happy to help you.
