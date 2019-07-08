@@ -83,7 +83,8 @@ yarn run serve
 You can also substitute `yarn` with `npm`, if it is easier for you to install/use it.
 
 The first compilation will take a little bit longer.
-After finishing compiling you will see the development's server address in your terminal.
+After finishing compiling you will see the development's server address in your terminal. If this step failes with an error, which has to do something with files, you could be affected of a
+too low limit of inotify user watches. To increase this limit, please take a look [here](https://unix.stackexchange.com/a/445011).
 
 Every time you edit a file, it will get compiled and hot reloaded - so you will not have to restart the dev server every time you change something.
 But be aware that this feature is not super reliable. So when you have an issue you can't explain, please try to stop the development server and start it again.
