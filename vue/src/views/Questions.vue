@@ -42,7 +42,7 @@ export default {
           'title': 'Vue Component',
           'question': 'What is a Vue Component?',
           'points': 1,
-          'answer': 'Hmmm, I did not come up with a solution yet.'
+          'answer': 'Components in Vue can be reused over and over again in ower templates. This allows you to break your application and the templates in it into smaller, reusable pieces.'
         },
         {
           'title': 'Vue Router',
