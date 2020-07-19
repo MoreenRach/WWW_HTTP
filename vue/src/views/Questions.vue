@@ -48,13 +48,13 @@ export default {
           'title': 'Vue Router',
           'question': 'What is the responsibility of the Vue Router? (file src/router/index.js)',
           'points': 1,
-          'answer': 'Hmmm, I did not come up with a solution yet.'
+          'answer': 'The Vue Router is the router for Vue.js. It makes it possible to built Single Page Applications with Vue.js. It allows the user to switch between pages without refreshing the page. You need a router when you need to sync URLs to views in your app.'
         },
         {
           'title': 'Vue Watcher',
           'question': 'When is a watcher like "currentPage" in src/components/API.vue called?',
           'points': 1,
-          'answer': 'Hmmm, I did not come up with a solution yet.'
+          'answer': 'What is a watcher? Someone observing the current page and returns error if something went wrong.'
         }
       ]
     }
