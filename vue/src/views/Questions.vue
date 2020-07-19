@@ -4,10 +4,6 @@
     <!--- It took me ? hours to solve the tasks in this file -->
     <div class="container">
       <h2>Questions & Answers</h2>
-      <p>
-        Please answer questions directly in source code at <code>src/components/Questions.vue</code>
-        and then remove this comment!
-      </p>
 
       <b-card-group columns>
         <b-card v-bind:key="question.title" v-for="question in questions"
@@ -40,7 +36,7 @@ export default {
           'title': 'SCSS',
           'question': 'Why is it preferable to use SCSS for large projects? What are the downsides of using it?',
           'points': 2,
-          'answer': 'Hmmm, I did not come up with a solution yet.'
+          'answer': 'general specifications can be defined centrally, once entered properties can be used again and again, the compiler checks for correct syntax, detects typos, aborts the compilation process and writes the errors to the output file, Clear and uniform spelling (new employees can quickly familiarize themselves with existing code), the compiler optimizes the CSS file, automated creation of CSS sprites. Few disadvantages: difficult debugging when line comments are disabled and when using external plugins version conflicts may occur'
         },
         {
           'title': 'Vue Component',
