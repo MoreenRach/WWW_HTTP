@@ -2,7 +2,7 @@
   <div>
     <!--- Matriculation number(s): 801040, 800999 -->
     <!--- It took me ? hours to solve the tasks in this file -->
-    <!--- It took me ? hours to set up the Vue application -->
+    <!--- It took me 1 hours to set up the Vue application -->
     <div class="container">
       <h2>API "Content" - Page {{ currentPage }}</h2>
 
@@ -37,19 +37,9 @@ export default {
     return {
       'currentPage': 1,
       'itemsPerPage': ITEMS_PER_PAGE,
-      'pageEntries': [ // TODO remove this dummy image before hand in
-        {
-          'title': 'DUMMY',
-          'id': 1,
-          'category': 'No category',
-          'captions': [
-            {
-              'text': 'sometext'
-            }
-          ]
-        }
+      'pageEntries': [
       ],
-      'totalCount': 1
+      'totalCount': 0
     }
   },
   watch: {
@@ -60,17 +50,36 @@ export default {
   },
   methods: {
     loadActualPageEntries: function () {
-      console.log(this.currentPage)
-
+      //console.log(this.currentPage)
+      let offset = 0;
+      offset = ITEMS_PER_PAGE * (this.currentPage -1);
+      fetch('https://flask-training-api.www-technologien.marschke.me/v1/images?limit=' + ITEMS_PER_PAGE + '&offset=' + offset).then(response => {
+          console.log(response);
+          response.json().then(json => {
+          console.log(json);
+          this.pageEntries = json.images;
+          this.totalCount = json.count;
+        });
+        
+      });
+      
+      
       // TODO load up to date page entries and store them in pageEntries (this.pageEntries) (3 Points)
       // TODO Don't forget to update totalCount by request information! (1 Point)
     },
     getImageSrc: function (entry) {
       // TODO get real address (1 Point)
-      return 'https://flask-training-api.www-technologien.marschke.me/v1/images/1/bitmap'
+      return 'https://flask-training-api.www-technologien.marschke.me/v1/images/' + entry.id + '/bitmap'
     }
-  }
+  },
   // TODO ensure loadActualPageEntries() gets called when the component gets displayed. Take a look at https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram (2 Points)
+  mounted: function () {
+  this.loadActualPageEntries();
+    // Code that will run only after the
+    // entire view has been rendered
+  
+}
+  
 
 }
 </script>
