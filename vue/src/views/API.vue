@@ -4,7 +4,7 @@
     <!--- It took me ? hours to solve the tasks in this file -->
     <!--- It took me 1 hours to set up the Vue application -->
     <div class="container">
-      <h2>API "Content" - Page {{ currentPage }}</h2>
+      <h2>Airplaines {{ currentPage }}</h2>
 
       <!-- TODO second pagination like pagination below table here (1 Point) -->
 

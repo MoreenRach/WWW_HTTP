@@ -7,8 +7,8 @@
         <div class="row">
           <div class="col-md-12 col">
             <div class="row-aligned-content">
-              <h2>Vue Playground</h2>
-              <p>Something we created just for you!</p>
+              <h2>AIRPLAINE HOMEPAGE</h2>
+              <p>ENJOY VIEWING</p>
             </div>
           </div>
         </div>
@@ -16,8 +16,8 @@
     </div>
 
     <div class="container">
-      <h3>Congratulations <icon name="thumbs-up"></icon></h3>
-      <p>You managed it to compile your (first) Vue application!</p>
+      <h3>Celebration <icon name="thumbs-up"></icon></h3>
+      <p>This is our first Vue application!</p>
 
       <h3>Tasks list (19 Points)</h3>
       <p>
@@ -61,11 +61,11 @@ export default {
 
       .col {
         display: table-cell;
-        vertical-align: middle;
+        vertical-align: middle; 
         min-height: 0;
         .row-aligned-content {
 
-          text-align: center;
+          text-align: left; //middle
 
           img {
             margin-bottom: 20px;
@@ -78,10 +78,10 @@ export default {
 
   #landing {
     > div {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.486);
     }
 
-    color: #FFFFFF;
+    color: #f0e00be0;
   }
 
   #landing-img {
@@ -95,7 +95,9 @@ export default {
 
   #landing-container {
     background-size: cover;
-    background-image: url("../assets/images/landing.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2020/05/24/23/37/airplane-5216583_960_720.jpg");
+    //background-image: url("../assets/images/landing.jpg");
+    //QUelle: https://pixabay.com/de/photos/flugzeug-flughafen-reisen-reise-5216583/
     margin-bottom: 25px;
     position: relative;
     overflow: hidden;
