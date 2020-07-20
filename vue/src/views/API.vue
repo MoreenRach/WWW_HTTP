@@ -4,7 +4,7 @@
     <!--- It took me ? hours to solve the tasks in this file -->
     <!--- It took me 1 hours to set up the Vue application -->
     <div class="container">
-      <h2>Airplaines {{ currentPage }}</h2>
+      <h2>Airplaines - {{ currentPage }}</h2>
 
       <!-- TODO second pagination like pagination below table here (1 Point) -->
 
@@ -17,16 +17,17 @@
                 img-fluid
                 img-alt="Image described by captions"
                 img-top>
-          <ul>
-            <!--  TODO insert list of captions here, consider caption['text'] as a unique value, use v-for to accomplish this (3 Points) -->
-            <!--  Kommentar Holger: So muss das Konstrukt aussehen damit wir die captions in die Liste bekommen.
-                  Es ist quasi eine For-Schleife, aber wir müssen noch die richtigen Parameter statt id und text finden. -->
-            <li v-bind:key="entry['id']"
-                v-for="entry in pageEntries"
-                :header="entry['text']">
-            </li>
-          </ul>
+                
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
         </b-card>
+
       </b-card-group>
 
       <b-pagination align="center" size="md" :total-rows="totalCount" v-model="currentPage" :per-page="itemsPerPage"></b-pagination>
@@ -75,6 +76,7 @@ export default {
       // TODO get real address (1 Point)
       return 'https://flask-training-api.www-technologien.marschke.me/v1/images/' + entry.id + '/bitmap'
     }
+    
   },
   // TODO ensure loadActualPageEntries() gets called when the component gets displayed. Take a look at https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram (2 Points)
   mounted: function () {

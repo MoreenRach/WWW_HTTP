@@ -8,6 +8,7 @@
       <b-card-group columns>
         <b-card v-bind:key="question.title" v-for="question in questions"
                 :title="question.title">
+                
           <div slot="header">
             <span v-if="question.points === 1">{{ question.points}} Point</span>
             <span v-else>{{ question.points }} Points</span>
@@ -20,8 +21,10 @@
           <p class="answer card-text">
             {{ question.answer }}
           </p>
+
         </b-card>
       </b-card-group>
+
     </div>
   </div>
 </template>
