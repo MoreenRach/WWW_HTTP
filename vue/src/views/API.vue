@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!--- Matriculation number(s): ??????, ?????? -->
+    <!--- Matriculation number(s): 801040, 800999 -->
     <!--- It took me ? hours to solve the tasks in this file -->
     <!--- It took me ? hours to set up the Vue application -->
     <div class="container">
@@ -82,6 +82,10 @@ export default {
   }
 
   // TODO What does it do? Explain especially the @include command (1 Point class explanation, 2 Points include explanation)
+  // Mit "." wird die Klasse angesprochen (in diesem Fall die Klasse "card-columns"). Alle Elemente, die diese Klasse erhalten, werden dann mit den Formatierungsbefehlen in den geschweiften Klammern dahinter formatiert
+  // Die includes legen die breakpoins für verschiedene Bildschirmauflösungen fest. Bei Bootstrap teilt man in der Regel den verfügbaren Screen in vier Klassen ein (sm, md, lg und xl). In diesem Fall wird cards auf Displays
+  // mit kleineren Auflösungen (md = Tablets, 768px und mehr) in zwei Spalten angezeigt, bei größeren Screens (lg = Desktops, 992px und mehr) mit 3 Spalten und bei richtig großem verfügbarem Screen (xl = große Desktops,
+  // 1200px und mehr) dargestellt.
   .card-columns {
     @include media-breakpoint-only(md) {
       column-count: 2;
