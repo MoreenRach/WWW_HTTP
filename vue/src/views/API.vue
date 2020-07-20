@@ -18,7 +18,13 @@
                 img-alt="Image described by captions"
                 img-top>
           <ul>
-            <!-- TODO insert list of captions here, consider caption['text'] as a unique value, use v-for to accomplish this (3 Points) -->
+            <!--  TODO insert list of captions here, consider caption['text'] as a unique value, use v-for to accomplish this (3 Points) -->
+            <!--  Kommentar Holger: So muss das Konstrukt aussehen damit wir die captions in die Liste bekommen.
+                  Es ist quasi eine For-Schleife, aber wir müssen noch die richtigen Parameter statt id und text finden. -->
+            <li v-bind:key="entry['id']"
+                v-for="entry in pageEntries"
+                :header="entry['text']">
+            </li>
           </ul>
         </b-card>
       </b-card-group>
@@ -50,11 +56,9 @@ export default {
   },
   methods: {
     loadActualPageEntries: function () {
-      //console.log(this.currentPage)
       let offset = 0;
       offset = ITEMS_PER_PAGE * (this.currentPage -1);
       fetch('https://flask-training-api.www-technologien.marschke.me/v1/images?limit=' + ITEMS_PER_PAGE + '&offset=' + offset).then(response => {
-          console.log(response);
           response.json().then(json => {
           console.log(json);
           this.pageEntries = json.images;
