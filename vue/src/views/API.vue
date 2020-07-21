@@ -7,7 +7,7 @@
       <h2>Airplaines - {{ currentPage }}</h2>
 
       <!-- TODO second pagination like pagination below table here (1 Point) -->
-
+      <b-pagination align="center" size="md" :total-rows="totalCount" v-model="currentPage" :per-page="itemsPerPage"></b-pagination>
       <!-- Bonus points for a loading screen appearing when loading new entries -->
       <b-card-group columns class="mb-4">
         <b-card v-bind:key="entry['id']"
@@ -18,17 +18,16 @@
                 img-alt="Image described by captions"
                 img-top>
                 
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul >
+                <li v-for="caption in entry['captions']"> 
+                  {{caption['text']}} </li>
             </ul>
 
         </b-card>
 
       </b-card-group>
+
+
 
       <b-pagination align="center" size="md" :total-rows="totalCount" v-model="currentPage" :per-page="itemsPerPage"></b-pagination>
     </div>
