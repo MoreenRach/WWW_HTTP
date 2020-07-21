@@ -1,8 +1,8 @@
 <template>
   <div>
     <!--- Matriculation number(s): 801040, 800999 -->
-    <!--- It took me ? hours to solve the tasks in this file -->
-    <!--- It took me 1 hours to set up the Vue application -->
+    <!--- It took me 18 hours to solve the tasks in this file -->
+    <!--- It took me 6 hours to set up the Vue application -->
     <div class="container">
       <h2>Airplaines - {{ currentPage }}</h2>
 
