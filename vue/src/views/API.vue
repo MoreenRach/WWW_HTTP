@@ -9,26 +9,20 @@
       <!-- TODO second pagination like pagination below table here (1 Point) -->
       <b-pagination align="center" size="md" :total-rows="totalCount" v-model="currentPage" :per-page="itemsPerPage"></b-pagination>
       <!-- Bonus points for a loading screen appearing when loading new entries -->
-      <b-card-group columns class="mb-4">
-        <b-card v-bind:key="entry['id']"
+        <b-card-group columns class="mb-4">
+          <b-card v-bind:key="entry['id']"
                 v-for="entry in pageEntries"
                 :header="entry['category']"
                 :img-src="getImageSrc(entry)"
                 img-fluid
                 img-alt="Image described by captions"
                 img-top>
-                
             <ul >
-                <li v-for="caption in entry['captions']"> 
-                  {{caption['text']}} </li>
+              <li v-for="caption in entry['captions']"> 
+                {{caption['text']}} </li>
             </ul>
-
-        </b-card>
-
-      </b-card-group>
-
-
-
+          </b-card>
+        </b-card-group>
       <b-pagination align="center" size="md" :total-rows="totalCount" v-model="currentPage" :per-page="itemsPerPage"></b-pagination>
     </div>
   </div>
@@ -84,7 +78,6 @@ export default {
     // entire view has been rendered
   
 }
-  
 
 }
 </script>

@@ -57,7 +57,7 @@ export default {
           'title': 'Vue Watcher',
           'question': 'When is a watcher like "currentPage" in src/components/API.vue called?',
           'points': 1,
-          'answer': 'What is a watcher? Someone observing the current page and returns error if something went wrong.'
+          'answer': 'A Watcher is a special Vue.js feature that allows you to spy on one property of the component state, and run a function when that property value changes. It is a way to observe and react to data changes on a Vue instance: watch properties.'
         }
       ]
     }
