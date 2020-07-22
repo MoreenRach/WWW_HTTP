@@ -52,12 +52,14 @@ export default {
           'question': 'What is the responsibility of the Vue Router? (file src/router/index.js)',
           'points': 1,
           'answer': 'The Vue Router is the router for Vue.js. It makes it possible to built Single Page Applications with Vue.js. It allows the user to switch between pages without refreshing the page. You need a router when you need to sync URLs to views in your app.'
+          //kann dynamisch geladen werden, sobald sich etwas ändert, ist die oberste Instanz in den Komponenten
         },
         {
           'title': 'Vue Watcher',
           'question': 'When is a watcher like "currentPage" in src/components/API.vue called?',
           'points': 1,
           'answer': 'A Watcher is a special Vue.js feature that allows you to spy on one property of the component state, and run a function when that property value changes. It is a way to observe and react to data changes on a Vue instance: watch properties.'
+          //meistens auf Variablen gesetzt, sobald sie sich verändert, verändert sich DOM
         }
       ]
     }
